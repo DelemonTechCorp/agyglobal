@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+        <!-- Header Start -->
+        <div class="container-fluid "style="  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url({% static 'images/equipmenthead.jpg' %});
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 100px 0 0 0;">
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h3 class="display-3 mb-4" style="color:#ffd900;">Heavy Equipment Trading</h1>
+                <p class="fs-5 text-white mb-4"> your trusted partner in Trade</p>
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
+                    <li class="breadcrumb-item"><a href="{% url 'services' %}">Services</a></li>
+                    <li class="breadcrumb-item active text-white" >Heavy Equipment Trading</li>
+                </ol>
+            </div>
+        </div>
+        <!-- Header End -->
+
+
+
+    <style>
+
+    .img-sec{
+        display: flex;
+                flex-wrap: wrap;
+                justify-content: center; /* Centers the cards horizontally */
+                gap: 20px; /* Consistent gap between the cards */
+                padding: 20px;
+
+    }
+
+    .card {
+        background-color: white;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 6px rgba(225, 225, 225, 0.1);
+                text-align: center;
+
+    }
+    .card-wrapper {
+                flex: 1 1 calc(33.333% - 20px); /* Makes the cards take up 1/3 of the container width minus the gap */
+                max-width: calc(33.333% - 20px); /* Ensures max-width matches the flex-basis */
+                box-sizing: border-box; /* Ensures padding and border are included in width calculations */
+            }
+            @media (max-width: 767px) {
+                .card-wrapper {
+                flex: 1 1 100%; /* Cards will take full width on small screens */
+                max-width: 100%; /* Ensure max-width is 100% */
+                }
+             }
+
+
+
+    .card p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    .head-sec{
+        text-align: center;
+        padding:50px;
+    }
+    .detail-sec{
+        padding:50px;
+    }
+    .head-img img{
+        width: 100%;
+        height:400px;
+        object-fit: cover;
+    }
+    .img-sec img{
+        width: 100%; /* Makes images fill the card width */
+        height: 200px; /* Maintains consistent image height */
+        object-fit: cover;
+    }
+    .card-wrapper {
+            text-align: center;
+            margin-top: 20px;
+        }
+    .card-wrapper .caption{
+        margin-top:15px;
+        font-size: 16px;
+        color:white;
+    }
+    h5{
+        font-size: 20px;
+        font-weight:600;
+    }
+</style>
+
+
+
+
+
+        <div class="head-sec"  style="background-color: #292828;">
+            <h3 class="text-white">Premium Quality Heavy Equipments from India, Brazil, Thailand, Europe, Al Khaleej Dubai</h3>
+                <span>High performance,premium quality Bulldozer,Cranes,Excavator,Loader</span>
+        </div>
+      <div style="background-color: #292828;">
+        <div class="img-sec container" >
+            <div class="card-wrapper">
+                <div class="card">
+                   <img src="{% static 'images/bulldozer1.jpg' %}">
+                </div>
+                <p class="caption">Bulldozer</p>
+            </div>
+
+            <div class="card-wrapper">
+                <div class="card">
+                   <img src="{% static 'images/excavators1.webp' %}">
+                </div>
+                <p class="caption">Excavator</p>
+            </div>
+
+            <div class="card-wrapper">
+                <div class="card">
+                   <img src="{% static 'images/cranes.jpg' %}">
+                </div>
+                <p class="caption">Cranes</p>
+            </div>
+            <div class="card-wrapper">
+                <div class="card">
+                   <img src="{% static 'images/dumptrucks.webp' %}">
+                </div>
+                <p class="caption">Dump Trucks</p>
+            </div>
+            <div class="card-wrapper">
+                <div class="card">
+                   <img src="{% static 'images/Loaders.jpg' %}">
+                </div>
+                <p class="caption">Loader</p>
+            </div>
+         </div>
+      </div>
+         <div style="background-color: #292828;">
+        <div class="container detail-sec">
+            <h5 style="color:#CCCCCC;margin-bottom: 20px;">AGY GLOBAL for Heavy Equipments Trading</h5>
+            <p>Our Company AGY GLOBAL, where innovation meets durability in the world of heavy equipment. Whether you’re in construction,
+            mining, agriculture, or industrial sectors, we offer an extensive range of high-performance machinery to boost your productivity
+            and efficiency. Our heavy equipment is sourced from leading manufacturers, ensuring top-quality performance and reliability.
+            From excavators and loaders to cranes and dump trucks, find the exact machinery to suit your project needs. Get the best value for your
+            investment with our competitive pricing and flexible financing options.Our knowledgeable team provides expert advice and support, helping you
+            select the right equipment and ensuring smooth transactions.
+            </p>
+        </div>
+        <div class="container detail-sec">
+            <h5 style="color:#CCCCCC;margin-bottom: 20px;">Our Heavy Equipment Services</h5>
+            <p>At AGY Global Trading, we offer a comprehensive suite of services tailored to meet the diverse needs of our clients in the heavy equipment sector.
+            Our expertise extends beyond just trading equipment; we are dedicated to providing end-to-end solutions that ensure your operations run smoothly and
+            efficiently.</p>
+             <h5 style="color:#CCCCCC;margin-bottom: 20px;">Equipment Sales and Leasing</h5>
+            <p><b>Sales:</b> We provide a wide range of heavy equipment for sale, including excavators, bulldozers, loaders, and more. Our inventory features
+            high-quality machinery from leading manufacturers, ensuring reliability and performance.</p>
+             <p><b>Leasing:</b> For projects that require temporary use of heavy equipment, we offer flexible leasing options. Our leasing services are designed to provide you with the right equipment for your needs without the
+            long-term commitment.</p>
+
+              <h5 style="color:#CCCCCC;margin-bottom: 20px;">Maintenance and Repairs</h5>
+
+            <p><b> Preventive Maintenance:</b> Regular maintenance is crucial for the longevity and performance of heavy equipment. We offer preventive
+            maintenance services to keep your machinery in optimal condition and reduce the risk of unexpected breakdowns.</p>
+
+            <p><b> Repairs:</b>  Our skilled technicians provide comprehensive repair services for all types of heavy equipment. From minor repairs to major overhauls,
+            we ensure that your equipment is back in working order promptly. </p>
+             <p><b>Parts Supply:</b>  We stock a wide range of spare parts and components for various types
+            of heavy equipment. Our parts supply service ensures that you have access to the necessary parts to keep your machinery running smoothly.</p>
+
+        </div>
+       </div>
+
+
+ <!-- Footer Start -->
+
+</body>
+{% endblock  %}
+</html>

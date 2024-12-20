@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+        <!-- Header Start -->
+        <div class="container-fluid "style=" background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url({% static 'images/contactus.webp' %});
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 100px 0 0 0;">
+            <div class="container text-center px-5 py-5" style="max-width: 900px;">
+                <h3 class="display-3 mb-4" style="color:  #ffd900;">Contact Us</h1>
+                <p class="fs-5 text-white mb-4"> your trusted partner in Trade</p>
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
+                    <li class="breadcrumb-item active text-white" >Contact Us</li>
+                </ol>
+            </div>
+        </div>
+        <!-- Header End -->
+        <!-- About -->
+<!-- Contact Start -->
+
+    <div class="row about px-5 py-5" style="display: flex;background-color: #292828;">
+   <div class="col-lg-4 col-md-12 info-sec mb-4" style="justify-content: center;">
+            <h2 style="color:#778899;margin-left:20px;">Get in touch!</h2>
+            <p style="color:#CCCCCC;margin-top:20px;margin-left:20px;">We’re here to help! Whether you have a question, need support, or just want to say hello, reach out to us anytime.</p>
+            <address style="color:#CCCCCC;margin-top:30px;margin-left:20px;">
+                API World Tower 31st Floor World Trade Centre near Metro Station
+Dubai - United Arab Emirates<br>
+                 info@agyglobaltrading.com<br>
+             +971 42 959 640</address>
+
+
+                <div class="social-media" style="margin-top:30px;margin-left:20px;">
+                    <p>Connect with us :</p>
+                    <div class="social-icons">
+                      <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                      <a href="#">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                      <a href="#">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                      <a href="#">
+                        <i class="fab fa-linkedin-in"></i>
+                      </a>
+                    </div>
+                </div>
+
+        </div>
+
+       <form method="POST" action="{% url 'contact_view' %}" class="col-lg-8 col-md-12 contact-fome" style="background-color:#CCCCCC;">
+        {% csrf_token %}
+        <div class="input-class">
+            <input type="text" name="name" class="input" placeholder="Your Name" required style="color: #292828;">
+            <input type="email" name="email" class="input" placeholder="Your E-mail" required>
+            <input type="tel" name="phone" class="input" placeholder="Phone" required>
+            <input type="text" name="subject" class="input" placeholder="Subject">
+        </div>
+        <div class="msg">
+            <textarea placeholder="Message" cols="30" rows="10"></textarea>
+            <button class="btn1" type="submit">Send</button>
+        </div>
+    </form>
+    </div>
+
+<!-- Contact End -->
+ <style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto');
+
+    .social-icons a {
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+
+
+  text-align: center;
+  line-height: 35px;
+  margin-right: 0.9rem;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.05);
+}
+.contact-fome{
+    max-width: 700px;
+    margin: 0 auto;
+    background: rgba(0,0,0,0.8);
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+.input-class{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+}
+.input-class, .msg{
+    width: 48%;
+}
+.input-class .input, .msg textarea{
+    margin: 10px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid black;
+    padding: 10px;
+    width: 100%;
+}
+.msg textarea{
+    height: 200px;
+}
+::-webkit-input-placeholder{
+    color: #292828;
+}
+::-moz-input-placeholder{
+    color: #292828;
+}
+.button{
+
+}
+.btn1{
+    background: #ecc801;
+    text-align: center;
+    padding: 15px;
+    border-radius:  5px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    box-shadow: 3px 3px 3px #888888;
+    border:1px solid #dcbb01;
+}
+msg,button:hover{
+    background-color:#dcbb01;
+    color: black;
+}
+@media screen and (max-width: 600px){
+    .contact-fome{
+        flex-direction: column;
+    }
+    .msg text-area{
+        height: 80px;
+    }
+    .input-class, .msg{
+        width: 100%;
+    }
+}
+    </style>
+        <!-- Volunteers Start -->
+        <div class="container-fluid volunteer py-5" style="background-color: #292828;">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-5">
+                        <div class="row g-4">
+                            <div class="col-lg-6">
+                                <div class="volunteer-img">
+                                    <img src="{% static 'img/aa.jpg' %}" class="img-fluid w-100" alt="Image">
+                                    <div class="volunteer-title">
+                                        <h5 class="mb-2 text-white"></h5>
+                                        <p class="mb-0 text-white"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="volunteer-img">
+                                    <img src="{% static 'img/bb.jpg' %}" class="img-fluid w-100" alt="Image">
+                                    <div class="volunteer-title">
+                                        <h5 class="mb-2 text-white"></h5>
+                                        <p class="mb-0 text-white"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="volunteer-img">
+                                    <img src="{% static 'img/oo.jpg' %}" class="img-fluid w-100" alt="Image">
+                                    <div class="volunteer-title">
+                                        <h5 class="mb-2 text-white"></h5>
+                                        <p class="mb-0 text-white"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="volunteer-img">
+                                    <img src="{% static 'img/tt.jpg' %}" class="img-fluid w-100" alt="Image">
+                                    <div class="volunteer-title">
+                                        <h5 class="mb-2 text-white"></h5>
+                                        <p class="mb-0 text-white"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <h5 class="text-uppercase" style="font-family: 'Lato', sans-serif;font-size: 40px;font-weight: 700;color: #ffd900;"> OUR JOURNEY</h5>
+                        <h1 class="mb-4" style="font-family: 'Lato', sans-serif;font-size: 20px;opacity: 70%;color:#CCCCCC;">Join us in building a prosperous future with AGY Global Trading, your trusted partner in Trade</h1>
+                        <p class="mb-4">Our journey began with a simple mission: to connect industries with the highest quality goods, ensuring seamless transactions and building long-lasting relationships. Over the years, we've grown from a small trading company into a trusted partner in the global market, committed to excellence, integrity, and innovation.
+                        </p>
+                        <p class="" style="color:#CCCCCC;"><i class=" fa fa-check text-primary me-2"></i> Quality and Integrity</p>
+                        <p class="" style="color:#CCCCCC;"><i class=" fa fa-check text-primary me-2"></i> Global Reach</p>
+                        <p class="" style="color:#CCCCCC;"><i class=" fa fa-check text-primary me-2"></i> Expert Team</p>
+                        <p class="" style="color:#CCCCCC;"><i class=" fa fa-check text-primary me-2"></i>Sustainable Practices</p>
+                        <p class=" mb-5" style="color:#CCCCCC;"><i class=" fa fa-check text-primary me-2"></i> Customer Focus</p>
+                        <a class="btn-hover-bg btn btn-primary  py-2 px-4" href="#" style="color:#CCCCCC;">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Volunteers End -->
+        <!-- Footer Start -->
+
+
+</body>
+{% endblock %}
+</html>

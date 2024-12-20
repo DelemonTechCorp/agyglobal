@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<!-- Header Start -->
+        <div class="container-fluid "style=" background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url({% static 'images/food.jpg' %});
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 100px 0 0 0;">
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h3 class="display-3 mb-4" style="color:#ffd900;">Gallery</h1>
+
+            </div>
+        </div>
+        <!-- Header End -->
+
+
+<div class="container" >
+
+	<h1 class="heading" style="color: #CCCCCC;">Image Gallery</h1>
+
+	<div class="gallery">
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="{% static 'images/images1.webp' %}" alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="{% static 'images/images2.webp' %}" alt="sunset behind San Francisco city skyline">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="{% static 'images/images3.webp' %}" alt="people holding umbrellas on a busy street at night lit by street lights and illuminated signs in Tokyo, Japan">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="{% static 'images/images4.webp' %}" alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="{% static 'images/images5.webp' %}" alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA">
+		</div>
+
+		<div class="gallery-item">
+		    <img class="gallery-image" src="{% static 'images/images6.jpg' %}" alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA">
+		</div>
+
+    <div class="gallery-item">
+			<img class="gallery-image" src="{% static 'images/images7.jpg' %}" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+		</div>
+
+    <div class="gallery-item">
+			<img class="gallery-image" src="{% static 'images/images8.webp' %}" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+		</div>
+
+    <div class="gallery-item">
+			<img class="gallery-image" src="{% static 'images/images9.jpg' %}" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+		</div>
+
+	</div>
+
+</div>
+
+
+<style>
+ /*
+
+All grid code is placed in a 'supports' rule (feature query) at the bottom of the CSS (Line 77).
+
+The 'supports' rule will only run if your browser supports CSS grid.
+
+Flexbox is used as a fallback so that browsers which don't support grid will still recieve an identical layout.
+
+*/
+
+
+
+
+
+
+body{
+    background-color: #292828;
+}
+
+
+
+.heading {
+	font-family: "Montserrat", Arial, sans-serif;
+
+	font-weight: 500;
+	line-height: 1.5;
+	text-align: center;
+	padding: 3.5rem 0;
+	color: #1a1a1a;
+}
+
+.heading span {
+	display: block;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;
+    padding-bottom: 6vw;
+}
+
+.gallery-item {
+	/* Minimum width of 24rem and grow to fit available space */
+	flex: 1 0 24rem;
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+}
+
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+	transform: scale(1.15);
+}
+
+/*
+
+The following rule will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling.
+
+*/
+
+@supports (display: grid) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+		grid-gap: 2rem;
+	}
+
+	.gallery,
+	.gallery-item {
+		margin: 0;
+	}
+}
+
+
+  </style>
+  <script>
+  $(document).on("click", '[data-toggle="lightbox"]', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+  });
+  </script>
+      <!-- Footer Start -->
+
+</body>
+{% endblock %}
+</html>

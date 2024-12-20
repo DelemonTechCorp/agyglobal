@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+    <div class="container" style="padding:100px 50px;">
+        <h2>{{ blog_post.title }}</h2>
+        <p>{{ blog_post.content|safe }}</p>
+    </div>
+<style>
+h3{
+    margin-top:30px;
+    color:#CCCCCC;
+}
+h2{
+    color:#CCCCCC;
+}
+body{
+    background-color: #2C2C2C;
+}
+</style>
+</body>
+{% endblock %}
+</html>

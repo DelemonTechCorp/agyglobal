@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+
+
+<!-- Navbar End -->
+    <style>
+
+        .custom-border {
+            border: 0.5px solid rgb(144, 144, 144);
+        }
+        /* Default height for desktop */
+.responsive-height {
+    height: 370px;
+}
+
+@media (max-width: 767px) {
+    .responsive-height {
+        height: 550px !important; /* Adjust this value as needed */
+    }
+}
+
+
+.d-none {
+    display: none;
+}
+
+    </style>
+
+        <!-- Header Start -->
+        <div class="container-fluid "style="  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url({% static 'images/goldhead.jpg' %});
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 100px 0 0 0;">
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h3 class="display-3 mb-4" style="color:#ffd900;">Gold Trading</h1>
+                <p class="fs-5 text-white mb-4"> your trusted partner in Trade</p>
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
+                    <li class="breadcrumb-item"><a href="{% url 'services' %}">Services</a></li>
+                    <li class="breadcrumb-item active text-white" >Gold Trading</li>
+                </ol>
+            </div>
+        </div>
+        <!-- Header End -->
+
+
+
+    <style>
+
+    .img-sec{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center; /* Centers the cards horizontally */
+                gap: 20px; /* Consistent gap between the cards */
+                padding: 20px;
+
+            }
+            .card-wrapper {
+                flex: 1 1 calc(33.333% - 20px); /* Makes the cards take up 1/3 of the container width minus the gap */
+                max-width: calc(33.333% - 20px); /* Ensures max-width matches the flex-basis */
+                box-sizing: border-box; /* Ensures padding and border are included in width calculations */
+            }
+
+    .card {
+        background-color: white;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 6px rgba(225, 225, 225, 0.1);
+                text-align: center;
+
+    }
+    .card-wrapper {
+                flex: 1 1 calc(33.333% - 20px); /* Makes the cards take up 1/3 of the container width minus the gap */
+                max-width: calc(33.333% - 20px); /* Ensures max-width matches the flex-basis */
+                box-sizing: border-box; /* Ensures padding and border are included in width calculations */
+            }
+            @media (max-width: 767px) {
+                .card-wrapper {
+                flex: 1 1 100%; /* Cards will take full width on small screens */
+                max-width: 100%; /* Ensure max-width is 100% */
+                }
+             }
+
+
+
+    .card p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    .head-sec{
+        text-align: center;
+        padding:50px;
+    }
+    .detail-sec{
+        padding:50px;
+    }
+    .head-img img{
+        width: 100%;
+        height:400px;
+        object-fit: cover;
+    }
+    .img-sec img{
+        width: 100%; /* Makes images fill the card width */
+                height: 200px; /* Maintains consistent image height */
+                object-fit: cover;
+    }
+    .card-wrapper {
+            text-align: center;
+            margin-top: 20px;
+        }
+    .card-wrapper .caption{
+        margin-top:15px;
+        font-size: 16px;
+        color: white;
+    }
+    h5{
+        font-size: 20px;
+        font-weight:600;
+    }
+</style>
+
+
+
+
+
+
+
+        <div class="head-sec" style="background-color: #292828;">
+            <h3 class="text-white">Premium Quality Gold from India, UAE, Thailand, Europe, Al Khaleej Dubai</h3>
+                <span>ICUMSA 45 Crystal White Sugar, Sugar S30, ICUMSA 150 Crystal White Sugar, Brown Sugar</span>
+        </div>
+     <div  style="background-color: #292828;">
+        <div class="img-sec container">
+            <div class="card-wrapper">
+                <div class="card">
+                   <img src="{% static 'images/bullion.jpg' %}">
+                </div>
+                <p class="caption">Bullion</p>
+            </div>
+            <div class="card-wrapper">
+                <div class="card">
+                   <img src="{% static 'images/coin.jpg' %}">
+                </div>
+                <p class="caption">Gold coins</p>
+            </div>
+            <div class="card-wrapper">
+                <div class="card">
+                   <img src="{% static 'images/etf.jpg' %}">
+                </div>
+                <p class="caption">ETFs</p>
+            </div>
+
+
+         </div>
+     </div>
+         <div style="background-color: #292828;">
+        <div class="container detail-sec">
+            <h5 style="color:#CCCCCC;margin-bottom: 20px;">AGY GLOBAL for Gold Trading</h5>
+            <p>AGY GLOBAL, your gateway to premium gold trading opportunities. Whether you're an investor seeking stability or a trader looking for
+                 profitable opportunities, we offer a seamless platform for buying and selling gold with confidence.Our platform is secure, transparent, and user-friendly,
+                 ensuring a safe and efficient trading experience.Stay ahead with access to up-to-the-minute gold prices and market trends,
+                  empowering you to make informed decisions.Enjoy competitive spreads and low trading fees, maximizing your potential returns.Benefit from our market analysis and expert
+                   insights to navigate the gold market with confidence.Trade gold on a global scale with access to major markets and a wide range of gold products.</p>
+        </div>
+        <div class="container detail-sec">
+                    <h5  style="color:#CCCCCC;margin-bottom: 20px;">Our Gold Trading Services</h5>
+            <p>Our platform provides access to the global gold market, offering various types of gold to suit your specific needs:
+
+               <p> <b>Spot Gold:</b> Trade physical gold with real-time pricing, ideal for immediate transactions.</p>
+                <p> <b>Gold Bullion:</b> Purchase high-purity gold bars and coins, perfect for long-term investment and wealth preservation.</p>
+                <p> <b>Gold Futures:</b> Speculate on future gold prices with contracts that offer both flexibility and leverage.</p>
+                 <p> <b>Gold ETFs:</b> Invest in gold through Exchange-Traded Funds for a diversified and easily accessible approach.</p>
+                 <p> <b>Gold Scrap:</b> Buy and sell gold scrap for refining, catering to the needs of manufacturers and recyclers.</p></p>
+
+                 <p>With real-time pricing, expert insights, and secure transactions,AGY Global ensures that you can trade with confidence and capitalize on
+                 every opportunity in the gold market.</p>
+        </div>
+       </div>
+
+
+
+
+
+</body>
+{% endblock %}
+</html>

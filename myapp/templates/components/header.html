@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+{% load static %}
+
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+  
+      body {
+          font-family: "Lato", sans-serif;
+         
+        
+      }
+        /* Position the top-bar icons container */
+        .topbar-icons-container {
+            position: fixed;
+            top: 120px;
+            left: 0;
+            padding: 20px;
+            z-index: 999; /* Make sure it appears above other content */
+        }
+        .topbar-icon {
+            display: flex;
+            flex-direction: column;
+            gap: 15px; /* Space between icons */
+        }
+
+        /* Make sure the carousel has a relative positioning */
+     
+   
+  </style>
+</head>
+<body>
+<!-- Navbar start -->
+<div class="container-fluid px-0" style="width: 100%;">
+  <div class="container-fluid px-0">
+      <nav class="navbar navbar-light  navbar-expand-xl" style="width: 100%;background-color: #292828;box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);">
+          <a href="{% url 'index' %}" class="navbar-brand ms-3">
+              <img src="{% static 'img/agy1.png' %}" alt="Company Logo" class="img-fluid" style="height:50px;width:160px;">
+          </a>
+          <button class="navbar-toggler py-2 px-3 me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+              <span class="fa fa-bars text-primary"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse" style="width: 100%;background-color: #292828;">
+              <div class="navbar-nav ms-auto">
+                  <a href="{% url 'index' %}" class="nav-item nav-link active" style="color:#CCCCCC;font-weight: 700;">Home</a>
+                  <a href="{% url 'about' %}" class="nav-item nav-link" style="color:#CCCCCC;font-weight: 700;">About</a>
+                  <a href="{% url 'services' %}" class="nav-item nav-link" style="color:#CCCCCC;font-weight: 700;">Services</a>
+                  <a href="{% url 'blogs' %}" class="nav-item nav-link" style="color:#CCCCCC;font-weight: 700;">Blogs</a>
+              <div class="d-flex align-items-center flex-nowrap pt-xl-0" style="margin-left: 15px;">
+                  <a href="{% url 'contact' %}" class="btn-hover-bg btnn text-white py-2 px-4 me-3" style="background-color: #708090;">Trade Now</a>
+              </div>
+          </div>
+      </nav>
+  </div>
+</div>
+<!-- Navbar End -->
+    <!-- styles for border button Start -->
+
+    <style>
+
+        .custom-border {
+            border: 0.5px solid rgb(144, 144, 144);
+        }
+        /* Default height for desktop */
+.responsive-height {
+    height: 370px;
+}
+
+@media (max-width: 767px) {
+    .responsive-height {
+        height: 550px !important; /* Adjust this value as needed */
+    }
+}
+
+
+.d-none {
+    display: none;
+}
+    </style>
+    <!--  End -->
+
+    <div class="topbar-icons-container d-none d-lg-block">
+        <div class="topbar-icon d-flex align-items-center justify-content-end">
+            <a href="#" class="btn-square  me-2"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="btn-square  me-2"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="btn-square  me-2"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="btn-square  me-2"><i class="fab fa-pinterest"></i></a>
+            <a href="#" class="btn-square  me-0"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        </div>
+
+        

@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<!-- Header Start -->
+         <div class="container-fluid "style="  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url({% static 'images/goldhead.jpg' %});
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 100px 0 0 0;">
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h3 class="display-3 mb-4" style="color:#ffd900;">About Us</h1>
+                <p class="fs-5 text-white mb-4"> your trusted partner in Trade</p>
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
+
+                    <li class="breadcrumb-item active text-white" >About Us</li>
+                </ol>
+            </div>
+        </div>
+        <!-- Header End -->
+
+
+     <!-- About Start -->
+     <div class="container-fluid about py-5" style="background-color: #292828;">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-xl-5">
+                    <div class="h-100">
+                        <img src="{% static 'images/goods.webp' %}" class="img-fluid w-100" style="height:330px;margin-bottom: 30px" alt="Image">
+                    </div>
+                </div>
+                <div class="col-xl-7">
+                    <h5 class="text-uppercase" style="color: #CCCCCC;">About Us</h5>
+                    <h1 class="mb-4" style="color: #CCCCCC;">AGY GLOBAL TRADING</h1>
+                    <p class="fs-5 mb-4">AGY Global is a dynamic trading company with over 6+ years of expertise in the international trade arena. We have
+                        successfully built a strong presence across multiple sectors, including foodstuff and food products,
+                         mining equipment, heavy construction machinery, gold trading, oil trading, and sugar trading. Our commitment to quality, integrity,
+                          and client satisfaction has positioned us as a trusted partner for businesses across the globe.
+
+                    </p>
+                </div>
+            </div>
+            <div class="row g-5 mt-4">
+                <div class="col-12">
+                    <div class="tab-class p-4" style="background-color:rgb(200, 195, 195);">
+                        <ul class="nav d-flex mb-2">
+                            <li class="nav-item mb-3">
+                                <a class="d-flex py-2 text-center bg-white active" data-bs-toggle="pill" href="#tab-1">
+                                    <span class="text-dark" style="width: 150px;">About</span>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a class="d-flex py-2 mx-3 text-center bg-white" data-bs-toggle="pill" href="#tab-2">
+                                    <span class="text-dark" style="width: 150px;">Mission</span>
+                                </a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a class="d-flex py-2 text-center bg-white" data-bs-toggle="pill" href="#tab-3">
+                                    <span class="text-dark" style="width: 150px;">Vision</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div id="tab-1" class="tab-pane fade show p-0 active">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="d-flex">
+                                            <div class="text-start my-auto">
+                                                <h5 class="text-uppercase mb-3">About</h5>
+                                                <p class="mb-4">We have successfully built a strong presence across multiple sectors, including foodstuff and food products, mining equipment, heavy construction machinery, gold trading, oil trading, and sugar trading. Our commitment to quality, integrity, and client
+                                                    satisfaction has positioned us as a trusted partner for businesses across the globe.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab-2" class="tab-pane fade show p-0">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="d-flex">
+                                            <div class="text-start my-auto">
+                                                <h5 class="text-uppercase mb-3">Mission</h5>
+                                                <p class="mb-4">At AGY Global, our mission is to be the preferred trading partner for businesses around the world by providing high-quality products, exceptional service, and innovative solutions. We aim to:
+
+                                                    Deliver Excellence: Ensure the highest standards in every transaction, from sourcing to delivery.
+                                                    Foster Growth: Support our clients in achieving their business goals by providing reliable and competitive trading solutions.
+                                                    Build Relationships: Establish and maintain long-term partnerships based on trust, transparency, and mutual benefit.
+                                                    Promote Sustainability: Operate responsibly, with a commitment to ethical trading practices and environmental stewardship.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab-3" class="tab-pane fade show p-0">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="d-flex">
+                                            <div class="text-start my-auto">
+                                                <h5 class="text-uppercase mb-3">Vision</h5>
+                                                <p class="mb-4">Our vision is to be a leading global trading company, recognized for our unparalleled service, innovation, and commitment to quality. We aspire to:
+
+                                                    Expand Globally: Continue our growth across new markets and sectors, reaching clients in every corner of the world.
+                                                    Innovate Constantly: Embrace new technologies and practices to enhance efficiency, sustainability, and client satisfaction.
+                                                    Empower Communities: Contribute to the economic and social development of the communities we serve by supporting local businesses and fostering global connections.
+                                                    Lead with Integrity: Set the standard for ethical and transparent business practices in the global trading industry.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Why Us start -->
+ <div style="background-color: #292828;">
+    <h2 class=" text-center" style="color:#ffd900">Why Choose Us</h2>
+    <div id="conteudo" style="padding:0 60px;">
+        <div class="card card-1" >
+            <div class="abc" >
+                <h3 class="text-white">Over 6+ years of extensive experience</h3>
+            </div>
+            <div id="layer">
+                <p class="text-white" style="margin-top:30px;">
+                    With over 6+ years of experience in the international trading industry, AGY Global has a deep understanding of global markets and trade dynamics.
+                    Our seasoned expertise ensures that you receive the best solutions tailored to your specific needs.
+                </p>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="card card-4">
+            <div class="abc">
+                <h3 class="text-white">Commitment to Quality</h3>
+            </div>
+            <div id="layer">
+                <p class="text-white" style="margin-top:30px;">
+                    Quality is at the core of everything we do. From the products we trade to the services we offer,
+                     AGY Global ensures that only the highest standards are met. We work with reputable suppliers and maintain rigorous quality control
+                      processes to guarantee the best results for our clients.</p>
+            </div>
+        </div>
+
+        <div class="card card-2">
+            <div class="abc" >
+                <h3 class="text-white" >Diverse Portfolio</h3>
+            </div>
+            <div id="layer">
+                <p class="text-white" style="margin-top:30px;">
+                    AGY Global operates across multiple sectors, including foodstuff and food products, mining equipment, heavy construction machinery,
+                     gold trading, oil trading, and sugar trading.
+                    This diversity allows us to meet a wide range of requirements and provide comprehensive trading services under one roof.</p>
+            </div>
+        </div>
+
+        <div class="card card-3">
+            <div class="abc">
+                <h3 class="text-white">Global Network</h3>
+            </div>
+            <div id="layer">
+                <p class="text-white" style="margin-top:30px;">
+                    Our extensive global network of suppliers, manufacturers, and clients enables us to operate
+                     seamlessly across multiple countries. Whether you need products sourced
+                     from a specific region or want to expand your market reach, AGY Global has the connections to make it happen.</p>
+            </div>
+        </div>
+
+        </div>
+       </div>
+
+       <div class="caption">
+        <p class="text-white text-center py-3 " style=" margin:0 100px;">Choose us for a trading experience defined by reliability, excellence, and personalized service – contact us today and discover
+            how we can help you achieve your goals.Our commitment to excellence ensures that every transaction is handled with the utmost care and precision.
+             Contact us today to learn how we can tailor our services
+            to meet your unique needs and help you achieve your business goals with confidence.</p>
+       </div>
+
+       <style>
+
+       #conteudo{
+                 width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 70px;
+
+
+            }
+            .caption{
+                background-color: #292828;
+                height: 20vh;
+                padding: 0 15px; /* Reduce padding for smaller screens */
+                box-sizing: border-box;
+            }
+                     @media (max-width: 768px) {
+    .caption {
+        padding: 0 ; /* Further reduce padding on very small screens */
+        height: auto;
+        /* Adjust height to fit content if needed */
+    }
+
+    .caption p {
+        font-size: 14px; /* Adjust font size if text is too large */
+        margin: 0; /* Remove margin to prevent overflow */
+        padding: 0;
+
+
+    }
+}
+
+            .card {
+                width: 25%;
+                width: 100%; /* Full width on smaller screens */
+                height: 300px;
+                margin-bottom: 20px;
+                background-size: cover;
+                background-position: center;
+                cursor: pointer;
+                transition: all 1s ease;
+                position: relative;
+                padding: 0;
+                animation: fadeInUp 0.5s ease-out;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+
+
+            }
+                        @media(min-width: 768px) {
+    .card {
+        width: calc(50% - 20px); /* Two cards per row on medium screens */
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+
+@media(min-width: 992px) {
+    .card {
+        width: calc(25% - 20px); /* Four cards per row on large screens */
+    }
+}
+
+
+            @keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+            .abc {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%; /* Full height of the card */
+                text-align: center; /* Center text inside h3 */
+    }
+
+            .card-1 {
+                background-image: url("{% static 'images/experience.webp' %}"); /* Background image for card-1 */
+            }
+
+            .card-2 {
+                background-image: url("{% static 'images/portfolio.webp' %}"); /* Background image for card-2 */
+            }
+
+
+
+            .card-3 {
+                background-image: url("{% static 'images/network.webp' %}"); /* Background image for card-3 */
+            }
+            .card-4 {
+                background-image: url("{% static 'images/quality.webp' %}"); /* Background image for card-3 */
+            }
+
+
+            .card:hover {
+                background-size: 110% 110%; /* Zoom effect on hover */
+            }
+
+            .card:hover .abc {
+                display: none; /* Hide .abc on hover */
+            }
+
+            .card:hover #layer {
+                opacity: 0.80;
+                background: black;
+                cursor: default;
+            }
+
+            .card .abc {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+
+            #layer {
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                z-index: 2;
+                transition: all 1s ease;
+                text-align: center;
+            }
+
+            /* Styles for buttons */
+            #add {
+                width: 70%;
+                font-size: 15px;
+                height: 50px;
+                margin-top: 90px;
+                font-family: 'Helvetica';
+                font-weight: bold;
+                color: #fff;
+                background: #06304c;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: all 0.5s ease;
+            }
+
+            #comprar {
+                margin-top: 10px;
+                font-size: 15px;
+                background: #06304c;
+                border: none;
+                border-radius: 5px;
+                width: 70%;
+                height: 50px;
+                font-family: 'Helvetica';
+                font-weight: bold;
+                color: #fff;
+                cursor: pointer;
+                transition: all 0.5s ease;
+            }
+
+            #add:hover {
+                transform: scale(1.05);
+                box-shadow: 0px 2px 2px rgba(6, 48, 76, 0.80);
+            }
+
+            #comprar:hover {
+                transform: scale(1.05);
+                box-shadow: 0px 2px 2px rgba(6, 48, 76, 0.80);
+            }
+
+            /* General styles */
+
+
+            h2 {
+                color: #ffd900;
+                text-align: center;
+
+            }
+        </style>
+
+        <!-- Why Us end -->
+
+            <!-- Who am I start-->
+            <div class="fade-in" style="background-color: #4f4d4d; padding:4vw  8vw 0 8vw;">
+                <div class="row ">
+                  <div class="col-lg-5 client-sec">
+                 <img class="interactive img-fluid" src="{% static 'images/client.png' %}" alt="Client Image">
+
+                  </div>
+                  <div class="col-lg-6" style="padding: 30px;">
+
+                    <h1 style="text-align: center;color:#CCCCCC">Ahmad Khalid Ahmad Al Yarrah</h1>
+                    <p style="text-align: center;color: #cbad02;">Owner / Chairman</p>
+
+                       <p style="color:#a3a3a3;"> Your trusted partner in the world of goods trading. We are a
+                        leading international trading company specializing in  mining equipment, heavy machinery, sugar, gold, food products
+                         With a commitment to excellence and a deep understanding of the market, we strive to deliver unparalleled value to our clients.</p>
+                    <p style="margin-bottom:30px;color:#a3a3a3;">My vision is to revolutionize the goods trading industry through strategic leadership and a commitment to excellence. I am dedicated to building strong relationships and delivering top-tier products to our clients.</p>
+                   <div style="display:flex;justify-content: center;align-items: center;">
+                    <a href="{% url 'contact' %}" class="btn btn-primary text-white" style="padding:10px;margin:auto;">Get in Touch</a>
+                </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="fade-in" style="background-color: #3e3e3e;">
+                <div class="row">
+
+                  <div class="col-lg-6 client-sec" style="padding: 25vh 20vh;">
+
+                    <h1 style="text-align: center;color:#CCCCCC">Mohamed Ali Elabry</h1>
+                    <p style="text-align: center;color: #cbad02;">Partner/ board member</p>
+
+                       <p style="color:#a3a3a3;"> Mohamed El Abry is a partner and board member of AGY GLOBAL TRADING, specializing in gold mining and trading. He is the sole controller and manager of all the mines in Tanzania and brings over 12 years of experience in the gold mining and gemstones field.</p>
+                   <div style="display:flex;justify-content: center;align-items: center;">
+                    <a href="#contact" class="btn btn-primary text-white" style="padding:10px;margin:auto;">Get in Touch</a>
+                </div>
+                  </div>
+
+                  <div class="col-lg-5" style="justify-content: center;align-items: center;display: flex;padding:4vw  8vw 0 8vw;">
+                    <img class="interactive img-fluid" src="{% static 'images/partnertrading.png' %}" alt="Client Image" >
+
+                  </div>
+                </div>
+              </div>
+
+              <style>
+                .interactive {
+                  transition: transform 0.3s;
+                  display: inline-block;
+                }
+
+                .interactive:hover {
+                  transform: translateX(10px);
+                }
+                 @media only screen and (max-width: 767px) {
+                    .fade-in .client-sec{
+                        padding:10vh !important;
+
+                    }
+}
+
+
+              </style>
+
+              <!-- Who am I end-->
+
+        <!-- Volunteers Start -->
+        <div class="container-fluid volunteer py-5"  style="background-color: #292828;">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-5">
+                        <div class="row g-4">
+                            <div class="col-lg-6">
+                                <div class="volunteer-img">
+                                    <img src="{% static 'img/aa.jpg' %}" class="img-fluid w-100" alt="Image">
+                                    <div class="volunteer-title">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="volunteer-img">
+                                    <img src="{% static 'img/bb.jpg' %}" class="img-fluid w-100" alt="Image">
+                                    <div class="volunteer-title">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="volunteer-img">
+                                    <img src="{% static 'img/oo.jpg' %}" class="img-fluid w-100" alt="Image">
+                                    <div class="volunteer-title">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="volunteer-img">
+                                    <img src="{% static 'img/tt.jpg' %}" class="img-fluid w-100" alt="Image">
+                                    <div class="volunteer-title">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <h5 class="text-uppercase " style="font-family: 'Lato', sans-serif;font-size: 40px;font-weight: 700;color: #ffd900;"> OUR JOURNEY</h5>
+                        <h1 class="mb-4" style="font-family: 'Lato', sans-serif;font-size: 20px;opacity: 70%;color:#CCCCCC;">Join us in building a prosperous future with AGY Global Trading, your trusted partner in Trade</h1>
+                        <p class="mb-4" style="color:#CCCCCC;">Our journey began with a simple mission: to connect industries with the highest quality goods, ensuring seamless transactions and building long-lasting relationships. Over the years, we've grown from a small trading company into a
+                            trusted partner in the global market, committed to excellence, integrity, and innovation.
+                        </p>
+                        <p class="" style="color:#CCCCCC;"><i class=" fa fa-check text-primary me-2"></i> Quality and Integrity</p>
+                        <p class="" style="color:#CCCCCC;"><i class=" fa fa-check text-primary me-2"></i> Global Reach</p>
+                        <p class="" style="color:#CCCCCC;"><i class=" fa fa-check text-primary me-2"></i> Expert Team</p>
+                        <p class="" style="color:#CCCCCC;"><i class=" fa fa-check text-primary me-2"></i>Sustainable Practices</p>
+                        <p class=" mb-5" style="color:#CCCCCC;"><i class=" fa fa-check text-primary me-2"></i> Customer Focus</p>
+                        <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="{% url 'contact' %}">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+</body>
+{% endblock %}
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+ <!-- Header Start -->
+        <div class="container-fluid "style="  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url({% static 'images/services.avif' %});
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 100px 0 0 0;" >
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h3 class="display-3 mb-4" style="color:  #ffd900;">Services</h1>
+                <p class="fs-5 text-white mb-4"> your trusted partner in Trade</p>
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
+                    <li class="breadcrumb-item active text-white">Services</li>
+                </ol>
+            </div>
+        </div>
+        <!-- Header End -->
+        <!-- About -->
+<!-- About Start -->
+<div class="container-fluid about py-5" style="background-color: #292828;">
+    <div class="container py-5" style="margin-top: -50px; padding: 5px;">
+        <div class="row g-1">
+            <div class="col-xl-12">
+                <div class="h-100 d-flex flex-column flex-md-row"  style="background-color:rgb(200, 195, 195); padding: 20px;">
+                    <div class="col-xl-5 col-md-12 mb-3 mb-md-0">
+                        <img src="{% static 'img/gold.webp' %}" class="img-fluid w-100" style="height: 330px;" alt="Image">
+                    </div>
+                    <div class="col-xl-7 col-md-12" >
+                        <div class="tab-class p-4">
+                            <ul class="nav d-flex mb-2">
+                                <li class="nav-item mb-3">
+                                    <!-- Add any needed nav items here -->
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div id="tab-1" class="tab-pane fade show p-0 active">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="d-flex">
+                                                <div class="text-start my-auto">
+                                                    <h5 class="text-uppercase mb-3">Gold Trading</h5>
+                                                    <p class="mb-4">We are actively engaged in gold mining operations across different countries. Our global presence in the mining sector allows us to source high-quality gold, ensuring the integrity and value of our offerings.
+                                                    </p>
+                                                   <a href="{% url 'gold' %}"> <button type="button" class="btn btn-primary "style="color:white;">Learn More</button></a>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container py-5" style="margin-top: -50px; padding: 5px;">
+        <div class="row g-1">
+            <div class="col-xl-12">
+                <div class="h-100 d-flex flex-column flex-md-row" style="background-color:rgb(200, 195, 195); padding: 20px;">
+                    <div class="col-xl-5 col-md-12 mb-3 mb-md-0">
+                        <img src="{% static 'img/hvy.webp' %}" class="img-fluid w-100" style="height: 330px;" alt="Image">
+                    </div>
+                    <div class="col-xl-7 col-md-12" >
+                        <div class="tab-class p-4">
+                            <ul class="nav d-flex mb-2">
+                                <li class="nav-item mb-3">
+                                    <!-- Add any needed nav items here -->
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div id="tab-1" class="tab-pane fade show p-0 active" >
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="d-flex">
+                                                <div class="text-start my-auto">
+                                                    <h5 class="text-uppercase mb-3">Heavy Equipment </h5>
+                                                    <p class="mb-4">Sourced from top manufacturers, ensuring durability and efficiency in even the most demanding environments.
+                                                         Our catalog includes a wide range of construction equipment, from excavators to loaders, designed to meet the diverse needs of construction projects.
+                                                    </p>
+                                                    <a href="{% url 'equipment' %}"><button type="button" class="btn btn-primary "style="color:white;">Learn More</button></a>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container py-5" style="margin-top: -50px; padding: 5px;">
+        <div class="row g-1">
+            <div class="col-xl-12">
+                <div class="h-100 d-flex flex-column flex-md-row" style="background-color:rgb(200, 195, 195);padding: 20px;">
+                    <div class="col-xl-5 col-md-12 mb-3 mb-md-0">
+                        <img src="{% static 'img/equip.webp' %}" class="img-fluid w-100" style="height: 330px;" alt="Image">
+                    </div>
+                    <div class="col-xl-7 col-md-12">
+                        <div class="tab-class p-4">
+                            <ul class="nav d-flex mb-2">
+                                <li class="nav-item mb-3">
+                                    <!-- Add any needed nav items here -->
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div id="tab-1" class="tab-pane fade show p-0 active" >
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="d-flex">
+                                                <div class="text-start my-auto">
+                                                    <h5 class="text-uppercase mb-3">Mining Equipment</h5>
+                                                    <p class="mb-4">We supply a comprehensive range of advanced mining equipment, helping our clients enhance
+                                                        productivity and safety in their mining operations. Our equipment is
+                                                         sourced from top manufacturers, ensuring durability and efficiency in even the most demanding environments.
+                                                    </p>
+                                                   <a href="{% url 'mining' %}"> <button type="button" class="btn btn-primary "style="color:white;">Learn More</button></a>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container py-5" style="margin-top: -50px; padding: 5px;">
+        <div class="row g-1">
+            <div class="col-xl-12">
+                <div class="h-100 d-flex flex-column flex-md-row" style="background-color:rgb(200, 195, 195); padding: 20px;">
+                    <div class="col-xl-5 col-md-12 mb-3 mb-md-0">
+                        <img src="{% static 'img/FOOD.jpg' %}" class="img-fluid w-100" style="height: 330px;" alt="Image">
+                    </div>
+                    <div class="col-xl-7 col-md-12">
+                        <div class="tab-class p-4">
+                            <ul class="nav d-flex mb-2">
+                                <li class="nav-item mb-3">
+                                    <!-- Add any needed nav items here -->
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div id="tab-1" class="tab-pane fade show p-0 active">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="d-flex">
+                                                <div class="text-start my-auto">
+                                                    <h5 class="text-uppercase mb-3">Food Stuff Trading</h5>
+                                                    <p class="mb-4">AGY Global is committed to sourcing and distributing premium quality foodstuff and food
+                                                        products worldwide. Our extensive network ensures that we provide the freshest
+                                                         and most reliable supplies to meet the demands of our customers, from staple foods to specialized products.
+                                                    </p>
+                                                   <a href="{% url 'foodstuff' %}"> <button type="button" class="btn btn-primary "style="color:white;">Learn More</button></a>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container py-5" style="margin-top: -50px; padding: 5px;">
+        <div class="row g-1">
+            <div class="col-xl-12">
+                <div class="h-100 d-flex flex-column flex-md-row" style="background-color:rgb(200, 195, 195);padding: 20px;">
+                    <div class="col-xl-5 col-md-12 mb-3 mb-md-0">
+                        <img src="{% static 'img/sug.webp' %}" class="img-fluid w-100" style="height: 330px;" alt="Image">
+                    </div>
+                    <div class="col-xl-7 col-md-12">
+                        <div class="tab-class p-4">
+                            <ul class="nav d-flex mb-2">
+                                <li class="nav-item mb-3">
+                                    <!-- Add any needed nav items here -->
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div id="tab-1" class="tab-pane fade show p-0 active" >
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="d-flex">
+                                                <div class="text-start my-auto">
+                                                    <h5 class="text-uppercase mb-3">Sugar Trading</h5>
+                                                    <p class="mb-4">AGY Global is a key player in the sugar trading sector, delivering refined and raw sugar to markets worldwide.
+                                                         We work closely with leading producers to ensure that our clients receive top-grade products at competitive prices.</p>
+                                                   <a href="{% url 'sugar' %}"> <button type="button" class="btn btn-primary "style="color:white;">Learn More</button></a>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+<!-- About End -->
+
+<!-- Why Us start
+ <div style="background-color:  #292828;">
+<h2 class="pt-4 pb-3" style="color: #ffd900;text-align: center;">Why Us</h2>
+    <div class="cards-list"  style="background-color: #292828;">
+
+        <div class="card 1 py-3">
+
+          <div class="card_title ">
+            <p class="text-dark">Over 6+ years of experience</p>
+          </div>
+        </div>
+
+          <div class="card 2">
+
+          <div class="card_title">
+            <p>Diverse Portfolio</p>
+          </div>
+        </div>
+
+        <div class="card 3">
+
+          <div class="card_title">
+            <p>Global Network</p>
+          </div>
+        </div>
+
+          <div class="card 4">
+
+          <div class="card_title ">
+            <p>Commitment to Quality</p>
+          </div>
+          </div>
+
+        </div>
+    </div>
+
+<style>
+.cards-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+
+.card .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.card .card_title {
+  text-align: center;
+
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+
+  height: 40px;
+
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25),
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+
+.title-white {
+  color: white;
+}
+
+.title-black {
+  color: black;
+}
+
+@media all and (max-width: 500px) {
+  .card-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+ -->
+
+
+    </style>
+
+<!-- Why Us end -->
+
+
+
+
+
+        <!-- Footer Start -->
+
+
+</body>
+{% endblock %}
+
+</html>

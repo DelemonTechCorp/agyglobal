@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+
+        <!-- Header Start -->
+        <div class="container-fluid "style=" background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url({% static 'images/food.jpg' %});
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 100px 0 0 0;">
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h3 class="display-3 mb-4" style="color:#ffd900;">Food Stuff Trading</h1>
+                <p class="fs-5 text-white mb-4"> your trusted partner in Trade</p>
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
+                    <li class="breadcrumb-item"><a href="{% url 'services' %}">Services</a></li>
+                    <li class="breadcrumb-item active text-white" >Food Stuff Trading</li>
+                </ol>
+            </div>
+        </div>
+        <!-- Header End -->
+
+
+
+    <style>
+
+    .img-sec{
+        display: flex;
+                flex-wrap: wrap;
+                justify-content: center; /* Centers the cards horizontally */
+                gap: 20px; /* Consistent gap between the cards */
+                padding: 20px;
+
+    }
+
+    .card {
+        background-color: white;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 6px rgba(225, 225, 225, 0.1);
+                text-align: center;
+
+    }
+    .card-wrapper {
+                flex: 1 1 calc(33.333% - 20px); /* Makes the cards take up 1/3 of the container width minus the gap */
+                max-width: calc(33.333% - 20px); /* Ensures max-width matches the flex-basis */
+                box-sizing: border-box; /* Ensures padding and border are included in width calculations */
+            }
+            @media (max-width: 767px) {
+                .card-wrapper {
+                flex: 1 1 100%; /* Cards will take full width on small screens */
+                max-width: 100%; /* Ensure max-width is 100% */
+                }
+             }
+
+
+
+    .card p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    .head-sec{
+        text-align: center;
+        padding:50px;
+    }
+    .detail-sec{
+        padding:50px;
+    }
+    .head-img img{
+        width: 100%;
+        height:400px;
+        object-fit: cover;
+    }
+    .img-sec img{
+        width: 100%; /* Makes images fill the card width */
+        height: 200px; /* Maintains consistent image height */
+        object-fit: cover;
+    }
+    .card-wrapper {
+            text-align: center;
+            margin-top: 20px;
+        }
+    .card-wrapper .caption{
+        margin-top:15px;
+        font-size: 16px;
+        color:white;
+    }
+    h5{
+        font-size: 20px;
+        font-weight:600;
+    }
+</style>
+
+
+
+
+        <div class="head-sec"    style="background-color: #292828;">
+            <h3 class="text-white">Premium Quality Food stuff from India, Brazil, Thailand, Europe, Al Khaleej Dubai</h3>
+                <span>ICUMSA 45 Crystal White Sugar, Sugar S30, ICUMSA 150 Crystal White Sugar, Brown Sugar</span>
+        </div>
+       <div style="background-color: #292828;">
+        <div class="img-sec container">
+            <div class="card-wrapper">
+                <div class="card">
+                   <img src="{% static 'images/wheatflour.jpg' %}">
+                </div>
+                <p class="caption">Wheat flour</p>
+            </div>
+            <div class="card-wrapper">
+                <div class="card">
+                   <img src="{% static 'images/rice.jpg' %}">
+                </div>
+                <p class="caption">Rice</p>
+            </div>
+            <div class="card-wrapper">
+                <div class="card">
+                   <img src="{% static 'images/vegetableoils.jpg' %}">
+                </div>
+                <p class="caption">Vegetable oils</p>
+            </div>
+
+
+            <div class="card-wrapper">
+                <div class="card">
+                   <img src="{% static 'images/pulses.jpg' %}">
+                </div>
+                <p class="caption">Pulses</p>
+            </div>
+            <div class="card-wrapper">
+                <div class="card">
+                   <img src="{% static 'images/grains.jpg' %}">
+                </div>
+                <p class="caption">Grains</p>
+            </div>
+            <div class="card-wrapper">
+                <div class="card">
+                   <img src="{% static 'images/oilseeds.jpg' %}">
+                </div>
+                <p class="caption">Oil Seeds</p>
+            </div>
+         </div>
+     </div>
+         <div style="background-color: #292828;">
+        <div class="container detail-sec">
+            <h5 style="color:#CCCCCC;margin-bottom: 20px;">AGY GLOBAL for Food stuff Trading</h5>
+            <p>AGY GLOBAL, your trusted partner in the dynamic world of foodstuff trading. From bulk ingredients to specialty products,
+            we provide a comprehensive platform to connect buyers and sellers in the global food market. Access a wide range of high-quality
+            foodstuffs, including grains, spices, oils, and more, to meet all your business needs.Connect with suppliers and buyers across the globe,
+            expanding your trading network and discovering new opportunities.Benefit from our competitive pricing and flexible terms to get the best
+            value for your trade.Partner with reputable suppliers and buyers, ensuring the highest standards of quality and consistency. Stay informed
+            with our up-to-date market analysis, trends, and forecasts to make strategic trading decisions.</p>
+        </div>
+        <div class="container detail-sec">
+            <h5  style="color:#CCCCCC;margin-bottom: 20px;">Types of Food Products We Trade</h5>
+            <p><b>Fresh Produce:</b> From fruits and vegetables to herbs and spices, our fresh produce is sourced from trusted growers and suppliers. We ensure that all items are delivered in optimal condition to maintain freshness and flavor.</p>
+
+            <p><b>Packaged Goods:</b> Our selection of packaged foods includes dry goods, canned items, snacks, and beverages. We offer products from well-known brands as well as private-label options to suit your preferences.</p>
+
+          <p> <b> Frozen Foods:</b> We provide a variety of frozen foods, including meat, seafood, vegetables, and ready-to-eat meals. Our frozen products are stored and handled to preserve quality and extend shelf life.</p>
+
+           <p> <b>Specialty Ingredients:</b> For businesses in the food service industry, we offer specialty ingredients such as exotic spices, gourmet sauces, and high-end culinary products. These items are perfect for creating unique and high-quality dishes.</p>
+
+           <p><b> Beverages:</b> Our beverage selection includes both non-alcoholic and alcoholic options, ranging from soft drinks and juices to wines and spirits. We offer a diverse range to suit different tastes and requirements.</p>
+         </div>
+       </div>
+
+
+
+
+
+</body>
+{% endblock  %}
+</html>

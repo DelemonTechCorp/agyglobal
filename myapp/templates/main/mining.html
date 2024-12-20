@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+         <!-- Header Start -->
+         <div class="container-fluid "style=" background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url({% static 'images/equipmenthead.jpg' %});
+         background-position: center center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         padding: 100px 0 0 0;">
+             <div class="container text-center py-5" style="max-width: 900px;">
+                 <h3 class="display-3 mb-4" style="color:#ffd900;">Mining Equipments Trading</h1>
+                 <p class="fs-5 text-white mb-4"> your trusted partner in Trade</p>
+                 <ol class="breadcrumb justify-content-center mb-0">
+                     <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
+                     <li class="breadcrumb-item"><a href="{% url 'services' %}">Services</a></li>
+                     <li class="breadcrumb-item active text-white">Mining Trading</li>
+                 </ol>
+             </div>
+         </div>
+         <!-- Header End -->
+
+
+
+     <style>
+
+     .img-sec{
+         display: flex;
+                 flex-wrap: wrap;
+                 justify-content: center; /* Centers the cards horizontally */
+                 gap: 20px; /* Consistent gap between the cards */
+                 padding: 20px;
+
+     }
+
+     .card {
+         background-color: white;
+                 padding: 20px;
+                 border-radius: 8px;
+                 box-shadow: 0 4px 6px rgba(225, 225, 225, 0.1);
+                 text-align: center;
+
+
+     }
+     .card-wrapper {
+                flex: 1 1 calc(33.333% - 20px); /* Makes the cards take up 1/3 of the container width minus the gap */
+                max-width: calc(33.333% - 20px); /* Ensures max-width matches the flex-basis */
+                box-sizing: border-box; /* Ensures padding and border are included in width calculations */
+            }
+            @media (max-width: 767px) {
+                .card-wrapper {
+                flex: 1 1 100%; /* Cards will take full width on small screens */
+                max-width: 100%; /* Ensure max-width is 100% */
+                }
+             }
+
+
+
+     .card p {
+         font-size: 16px;
+         line-height: 1.5;
+     }
+     .head-sec{
+         text-align: center;
+         padding:50px;
+     }
+     .detail-sec{
+         padding:30px 50px;
+     }
+     .head-img img{
+         width: 100%;
+         height:400px;
+         object-fit: cover;
+     }
+     .img-sec img{
+         width: 100%; /* Makes images fill the card width */
+         height: 200px; /* Maintains consistent image height */
+         object-fit: cover;
+     }
+     .card-wrapper {
+             text-align: center;
+             margin-top: 20px;
+         }
+     .card-wrapper .caption{
+         margin-top:15px;
+         font-size: 16px;
+         color: white;
+     }
+     h5{
+         font-size: 20px;
+         font-weight:600;
+     }
+ </style>
+
+
+
+         <div class="head-sec"   style="background-color: #292828;">
+             <h3 class="text-white">Premium Quality Mining Equipments from India, Brazil, Thailand, Europe, Al Khaleej Dubai</h3>
+                 <span>ICUMSA 45 Crystal White Sugar, Sugar S30, ICUMSA 150 Crystal White Sugar, Brown Sugar</span>
+         </div>
+     <div   style="background-color: #292828;">
+         <div class="img-sec container">
+             <div class="card-wrapper">
+                 <div class="card">
+                    <img src="{% static 'images/excavators1.webp' %}">
+                 </div>
+                 <p class="caption">Excavators</p>
+             </div>
+             <div class="card-wrapper">
+                 <div class="card">
+                    <img src="{% static 'images/drillingmachine.jpg' %}">
+                 </div>
+                 <p class="caption">Drilling machine</p>
+             </div>
+             <div class="card-wrapper">
+                 <div class="card">
+                    <img src="{% static 'images/loaders1.webp' %}">
+                 </div>
+                 <p class="caption">Loaders </p>
+                 </div>
+
+             <div class="card-wrapper">
+                 <div class="card">
+                    <img src="{% static 'images/conveyers.jpg' %}">
+                 </div>
+                 <p class="caption">Conveyors</p>
+             </div>
+             <div class="card-wrapper">
+                 <div class="card">
+                    <img src="{% static 'images/haultrucks.jpg' %}">
+                 </div>
+                 <p class="caption">Haul Trucks</p>
+             </div>
+             <div class="card-wrapper">
+                 <div class="card">
+                    <img src="{% static 'images/crushers.webp' %}">
+                 </div>
+                 <p class="caption">Crushers</p>
+             </div>
+
+          </div>
+
+          <div style="background-color: #292828;">
+         <div class="container detail-sec">
+             <h5 style="color:#CCCCCC;margin-bottom: 20px;">AGY GLOBAL for Mining Equipments</h5>
+             <p>AGY GLOBAL, where innovation meets durability in the world of mining equipment. Whether you’re involved in surface mining,
+                  underground mining, or exploration,
+                  we offer an extensive range of high-performance machinery designed to maximize productivity and efficiency in the most demanding environments.
+                 Whether you’re operating a large-scale mining operation or a smaller project, our platform offers a
+                 comprehensive range of equipment to support your needs and enhance productivity.Explore a wide selection of mining equipment,
+                 including excavators, drills, loaders, and more, from leading manufacturers.Connect with top suppliers and buyers worldwide,
+                 ensuring access to the best products and opportunities in the mining industry.Benefit from our competitive rates and flexible terms,
+                  maximizing your investment and operational efficiency.Stay ahead with market trends, analysis, and forecasts tailored to the mining equipment sector.
+                  Experience smooth and secure trading with our transparent processes and trusted platform.</p>
+         </div>
+         <div class="container detail-sec">
+             <h5 style="color:#CCCCCC;margin-bottom: 20px;">Heavy-Duty Mining Equipment for Global Operations</h5>
+                 <p>
+                  High-Performance Mining Machinery from Top Manufacturers
+                 At AGY GLOBAL, we are committed to being your trusted partner in
+                 providing high-performance mining equipment to operations around the globe. Based in Dubai,
+                 we source our machinery from leading manufacturers across the world, ensuring that our clients receive only
+                 the most reliable and efficient equipment available. With a strong presence in India,Brazil,Malaysia,Uganda, we have
+                  established ourselves as a dependable supplier to mining companies in Africa, the Middle East, and beyond.
+                 </p>
+                 <h5 style="color:#CCCCCC;margin-bottom: 20px;"> Excavators, Crushers, Drills, Conveyors, and More</h5>
+                 <p>Our extensive range of mining equipment includes everything from excavators and crushers to drills and conveyors.
+                 Each piece of machinery is carefully selected and rigorously tested to meet the high standards that AGY GLOBAL is known for.
+                 We understand that mining operations require equipment that is not only powerful but also durable and efficient. That’s why we offer a
+                 variety of options to ensure that our clients can find the right machinery to meet their specific needs.</p>
+                 <h5 style="color:#ffd900;margin-bottom: 20px;">  Our Team</h5>
+                 <p>
+                 The team at AGY GLOBAL is composed of experienced professionals who are passionate about the mining industry.
+                 Whether you are managing a small operation or a large-scale mining project, we are here to help you find the equipment that best
+                 suits your requirements. With our unwavering commitment to quality, reliability, and customer satisfaction, AGY GLOBAL is
+                 the ideal partner for all your mining equipment needs.
+                 </p>
+         </div>
+     </div>
+
+
+
+</body>
+{% endblock %}
+</html>
