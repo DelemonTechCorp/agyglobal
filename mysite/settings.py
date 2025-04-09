@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-u$719@73hc*%s=ia9ew@un&btm6h=d%og64z=ag6eo&82&k(90
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['www.agyglobaltrading.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -125,9 +125,12 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # default static files settings for PythonAnywhere.
 # see https://help.pythonanywhere.com/pages/DjangoStaticFiles for more info
-MEDIA_ROOT = '/home/agyglobal/mysite/media'
+import os
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
-STATIC_ROOT = '/home/agyglobal/mysite/static'
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'myapp', 'static')
 STATIC_URL = '/static/'
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
